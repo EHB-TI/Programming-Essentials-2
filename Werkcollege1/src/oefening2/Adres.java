@@ -72,4 +72,8 @@ public class Adres {
 
 	}
 
+	public String toString()
+	{
+		return "Woonplaats: " + woonplaats + "\nPostcode: " + postcode + "\nStraat, nr & bus: " + straatnaam + " " + huisnummer + " " + bus;
+	}
 }
