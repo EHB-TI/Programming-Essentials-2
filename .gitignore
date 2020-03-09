@@ -2,6 +2,9 @@
 .DS_Store
 .idea
 .out
+.git
+
+*.iml
 
 # Compiled class file
 *.class
