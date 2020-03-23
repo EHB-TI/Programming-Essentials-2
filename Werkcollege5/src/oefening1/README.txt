@@ -1,0 +1,1 @@
+Zie werkcollege 4 oefening 1 (Dier)
