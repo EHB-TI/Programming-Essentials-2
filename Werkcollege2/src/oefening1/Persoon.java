@@ -3,12 +3,15 @@ package oefening1;
 import oefening2.Adres;
 
 public class Persoon {
+
+    private static int aantal = 0;
     private String voornaam;
     private String achternaam;
     private String telefoon;
     private Adres adres;
 
     public Persoon(String voornaam, String achternaam) {
+        aantal++;
         this.voornaam = voornaam;
         this.achternaam = achternaam;
     }
@@ -41,6 +44,10 @@ public class Persoon {
         return adres;
     }
 
+    public static int getAantal() {
+        return aantal;
+    }
+
     public void setAdres(Adres adres) {
         this.adres = adres;
     }
@@ -53,5 +60,7 @@ public class Persoon {
         Persoon p2 = new Persoon("Jefke", "Jefkens");
         p2.setAdres(new Adres("Route 66", (short) 20, "", 8478, "Ontheedge"));
         System.out.println(p2.getAdres());
+
+        System.out.println("Aantal Personen: " + Persoon.getAantal());
     }
 }
